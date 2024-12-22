@@ -1,0 +1,104 @@
+{
+    "test_cases": [
+        {
+            "description": "Test Case 1: Long Distance, Heavy Traffic",
+            "request": {
+                "origin": "Chennai",
+                "destination": "Kolkata",
+                "vehicle_type": "Container",
+                "distance": 1680.75,
+                "weather": "Clear",
+                "traffic": "Heavy"
+            }
+        },
+        {
+            "description": "Test Case 2: Short Distance, Bad Weather",
+            "request": {
+                "origin": "Mumbai",
+                "destination": "Pune",
+                "vehicle_type": "Truck",
+                "distance": 148.2,
+                "weather": "Rain",
+                "traffic": "Moderate"
+            }
+        },
+        {
+            "description": "Test Case 3: Medium Distance, Foggy Conditions",
+            "request": {
+                "origin": "Delhi",
+                "destination": "Jaipur",
+                "vehicle_type": "Lorry",
+                "distance": 281.6,
+                "weather": "Fog",
+                "traffic": "Light"
+            }
+        },
+        {
+            "description": "Test Case 4: Maximum Load Scenario",
+            "request": {
+                "origin": "Bangalore",
+                "destination": "Hyderabad",
+                "vehicle_type": "Trailer",
+                "distance": 569.9,
+                "weather": "Clear",
+                "traffic": "Moderate"
+            }
+        },
+        {
+            "description": "Test Case 5: Metro Cities Rush Hour",
+            "request": {
+                "origin": "Delhi",
+                "destination": "Mumbai",
+                "vehicle_type": "Container",
+                "distance": 1421.5,
+                "weather": "Clear",
+                "traffic": "Heavy"
+            }
+        }
+    ],
+    "error_test_cases": [
+        {
+            "description": "Invalid Vehicle Type Test",
+            "request": {
+                "origin": "Mumbai",
+                "destination": "Delhi",
+                "vehicle_type": "Car",
+                "distance": 1420.5,
+                "weather": "Clear",
+                "traffic": "Moderate"
+            }
+        },
+        {
+            "description": "Invalid Weather Condition Test",
+            "request": {
+                "origin": "Mumbai",
+                "destination": "Delhi",
+                "vehicle_type": "Truck",
+                "distance": 1420.5,
+                "weather": "Sunny",
+                "traffic": "Moderate"
+            }
+        },
+        {
+            "description": "Negative Distance Test",
+            "request": {
+                "origin": "Mumbai",
+                "destination": "Delhi",
+                "vehicle_type": "Truck",
+                "distance": -100,
+                "weather": "Clear",
+                "traffic": "Moderate"
+            }
+        },
+        {
+            "description": "Missing Required Field Test",
+            "request": {
+                "origin": "Mumbai",
+                "destination": "Delhi",
+                "vehicle_type": "Truck",
+                "weather": "Clear",
+                "traffic": "Moderate"
+            }
+        }
+    ]
+}
