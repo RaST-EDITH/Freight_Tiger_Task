@@ -1,7 +1,18 @@
 {
     "test_cases": [
         {
-            "description": "Test Case 1: Long Distance, Heavy Traffic",
+            "description": "Test Case 1: Low Probability of Delay",
+            "request": {
+                "origin": "Mumbai",
+                "destination": "Pune",
+                "vehicle_type": "Container",
+                "distance": 148.2,
+                "weather": "Clear",
+                "traffic": "Light"
+            }
+        },
+        {
+            "description": "Test Case 2: Long Distance, Heavy Traffic",
             "request": {
                 "origin": "Chennai",
                 "destination": "Kolkata",
@@ -12,7 +23,7 @@
             }
         },
         {
-            "description": "Test Case 2: Short Distance, Bad Weather",
+            "description": "Test Case 3: Short Distance, Bad Weather",
             "request": {
                 "origin": "Mumbai",
                 "destination": "Pune",
@@ -23,7 +34,7 @@
             }
         },
         {
-            "description": "Test Case 3: Medium Distance, Foggy Conditions",
+            "description": "Test Case 4: Medium Distance, Foggy Conditions",
             "request": {
                 "origin": "Delhi",
                 "destination": "Jaipur",
@@ -34,7 +45,7 @@
             }
         },
         {
-            "description": "Test Case 4: Maximum Load Scenario",
+            "description": "Test Case 5: Maximum Load Scenario",
             "request": {
                 "origin": "Bangalore",
                 "destination": "Hyderabad",
@@ -45,7 +56,7 @@
             }
         },
         {
-            "description": "Test Case 5: Metro Cities Rush Hour",
+            "description": "Test Case 6: Metro Cities Rush Hour",
             "request": {
                 "origin": "Delhi",
                 "destination": "Mumbai",
